@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./login.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Company Brand</a>
+        </div>
+    </header>
+    <main>
+    <form class="cadastrar">
+        <h2>Realize seu cadastro</h2>
+        <input type="text" name="user_cadastro" placeholder="Escolha um usuario" required>
+        <input type="password" name="psw_cadastro" placeholder="Escolha uma senha" required>
+        <input type="password" name="psw_cadastro" placeholder="Confirme a senha" required>
+        <span>
+        <input type="checkbox" id="confirm" class="box" required>
+        <label for="confirm" name="confirm">Concordo com as politicas de segurança<br> e privacidade da empresa</label>
+        </span>
+        <input type="submit" value="Cadastrar" class="botao">
+        <p><a href="./index.html" class="cadastro">Já possui uma conta? Logar</a></p>
+    </form>
+    </main>
+</body>
+</html>

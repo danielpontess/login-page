@@ -1,0 +1,142 @@
+@font-face {
+    font-family: roboto-ligth;
+    src: url(./fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    height: 100vh;
+    font-family: roboto-regular;
+}
+/*Cabecalho*/
+header{
+    background-color: rgb(95, 51, 177);
+    padding: 18px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 4%;
+    transition: all 0.2s;
+}
+.logo a:hover{
+    color:rgb(228, 228, 238);
+    font-size: 19px;
+}
+/*Login container*/
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Inputs usuario e senha geral*/
+input{
+    margin: 9px;
+    outline: 0;
+    border-width: 0 0 2px 0;
+    width: 280px;
+    height: 36px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+input:focus{
+    border-width: 0 0 3px 0;
+    border-color: rgb(79, 52, 153);
+}
+input::placeholder{
+    color: #bbb;
+}
+a{
+    margin: 15px;
+}
+/*Botao de login*/
+.botao{
+    text-decoration: none;
+    background-color: rgb(42, 42, 143);
+    color: white;
+    padding: 7px 27px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.botao:hover{
+    background-color: rgb(86, 86, 177);
+    width: 290px;
+}
+/*Link de cadastro*/
+.cadastro{
+    text-decoration: rgb(24, 2, 43);
+    color: black;
+    font-size: 16px;
+}
+.cadastro:hover{
+    color:rgb(79, 52, 153);
+}
+/*texto inicial*/
+h2{
+    font-weight: 500;
+    margin: 20px;
+    font-size: 25px;
+}
+i{
+    margin-top: 20px;
+}
+
+/*Pagina de cadastro*/
+.cadastrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .4%;
+}
+span{
+    display: flex;
+}
+.box{
+    padding: 0px;
+    margin-top: 10px;
+    width: 20px;
+}
+label{
+    margin-top: 12px;
+    font-size: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+#confirm{
+    cursor: pointer;
+}
+@media (max-width: 1500px){
+    main{
+        margin-top: 20%;
+    }
+}
+@media (max-width: 1200px){
+    main{
+        margin-top: 24%;
+    }
+}
+@media (max-width: 900px){
+    main{
+        margin-top: 30%;
+    }
+}
+@media (max-width: 700px){
+    main{
+        margin-top: 50%;
+    }
+}
